@@ -1,0 +1,13 @@
+﻿@page
+@model Form.Pages.Index1Model
+@{
+}
+
+<p>Dane w zapisane w sesji</p>
+@if (Model.Addr != null)
+{
+    <p>@Html.DisplayNameFor(model => Model.Addr.Street):@Model.Addr.Street</p>
+    <p>@Html.DisplayNameFor(model => Model.Addr.City):@Model.Addr.City</p>
+    <p>@Html.DisplayNameFor(model => Model.Addr.Number):@Model.Addr.Number</p>
+    <p>@Html.DisplayNameFor(model => Model.Addr.ZipCode):@Model.Addr.ZipCode</p>
+}
